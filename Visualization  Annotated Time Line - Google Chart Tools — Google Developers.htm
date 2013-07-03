@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html class="devsite wf-opensans-n4-active wf-active" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/cbgapi.loaded_0"></script><script gapi_processed="true" src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/plusone.js" async="" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <script src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/script_head.js"></script>
+    <link rel="stylesheet" type="text/css" href="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/screen.css">
+    <link rel="shortcut icon" href="https://google-developers.appspot.com/_static/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://google-developers.appspot.com/_static/images/apple-touch-icon.png">
+    <link href="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/css_002.css" rel="stylesheet" type="text/css">
+    
+    <script src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/jquery.js"></script>
+    <script id="jqueryui" src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/jquery-ui.js"></script>
+    <script src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/jsapi"></script>
+
+    <script type="text/javascript" src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/api.js"></script>
+    <script type="text/javascript" src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/a_002"></script>
+    <!--[if lt IE 9]>
+    <script src="/_static/js/html5shim/html5.js"></script>
+    <![endif]-->
+
+    
+  <script type="text/javascript">
+    var contentTimer = new window.jstiming.Timer();
+
+    var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'en';
+  </script>
+  
+  <title>Visualization: Annotated Time Line - Google Chart Tools — Google Developers</title>
+  
+  
+  
+    
+    
+    
+  
+
+
+    
+    
+
+  <style>.a-b-c{position:relative;display:-moz-inline-box;display:inline-block}* html .a-b-c,*:first-child+html .a-b-c{display:inline}.a-d-e{margin:2px;border:0;padding:0;font-family:Arial,sans-serif;color:#000;background:#ddd url(//ssl.gstatic.com/editor/button-bg.png) repeat-x top left;text-decoration:none;list-style:none;vertical-align:middle;cursor:default;outline:none}.a-d-e-f-g,.a-d-e-h-g{border-style:solid;border-color:#aaa;vertical-align:top}.a-d-e-f-g{margin:0;border-width:1px 0;padding:0}.a-d-e-h-g{-moz-box-orient:vertical;margin:0 -1px;border-width:0 1px;padding:3px 4px;white-space:nowrap}* html .a-d-e-h-g{left:-1px}* html .a-d-e-i .a-d-e-f-g{left:-1px}* html .a-d-e-i .a-d-e-h-g{right:auto}*:first-child+html .a-d-e-h-g{left:-1px}*:first-child+html .a-d-e-i .a-d-e-h-g{left:1px}::root .a-d-e,::root .a-d-e-f-g{line-height:0}::root .a-d-e-h-g{line-height:normal}.a-d-e-j{background-image:none!important;opacity:.3;-moz-opacity:.3;filter:alpha(opacity=30)}.a-d-e-j .a-d-e-f-g,.a-d-e-j .a-d-e-h-g{color:#333!important;border-color:#999!important}* html .a-d-e-j,*:first-child+html .a-d-e-j{margin:2px 1px!important;padding:0 1px!important}.a-d-e-k .a-d-e-f-g,.a-d-e-k .a-d-e-h-g{border-color:#9cf #69e #69e #7af!important}.a-d-e-l,.a-d-e-m{background-color:#bbb;background-position:bottom left}.a-d-e-n .a-d-e-f-g,.a-d-e-n .a-d-e-h-g{border-color:orange}.a-d-e-o-p,.a-d-e-o-p .a-d-e-f-g,.a-d-e-o-p .a-d-e-h-g{margin-right:0}.a-d-e-o-q,.a-d-e-o-q .a-d-e-f-g{margin-left:0}.a-d-e-o-q .a-d-e-h-g{margin-left:0;border-left:1px solid #fff}.a-d-e-o-q.a-d-e-m .a-d-e-h-g{border-left:1px solid #ddd}* html .a-d-e-o-q .a-d-e-h-g,*:first-child+html .a-d-e-o-q .a-d-e-h-g{left:0}.a-r-e{position:relative;margin:2px;border:1px solid #000;padding:2px 6px;font:normal 13px "Trebuchet MS",Tahoma,Arial,sans-serif;color:#fff;background-color:#8c2425;cursor:pointer;outline:none}.a-r-e-j{border-color:#888;color:#888;background-color:#ccc;cursor:default}.a-r-e-k{border-color:#8c2425;color:#8c2425;background-color:#eaa4a5}.a-r-e-l,.a-r-e-s,.a-r-e-m{border-color:#5b4169;color:#5b4169;background-color:#d1a8ea}.a-r-e-n{border-color:#5b4169}.a-r-e-o-p{margin-right:0}.a-r-e-o-q{margin-left:0;border-left:none}.a-e{color:#036;border-color:#036;background-color:#69c}.a-e-j{border-color:#333;color:#333;background-color:#999}.a-e-k{color:#369;border-color:#369;background-color:#9cf}.a-e-l{color:#69c;border-color:#69c}</style><link href="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/css.css" rel="stylesheet"><link type="text/css" rel="stylesheet" href="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/table.css"></head>
+  <body class="two-column docs">
+    
+    <div id="sandbar">
+
+
+
+
+<header id="gc-googlebar">
+
+  <a id="gc-logo" href="https://google-developers.appspot.com/">
+    <img src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/developers-logo.png" alt="Google">
+  </a>
+
+  <div class="gc-social">
+    
+    <span class="signed-out">
+      <a href="https://google-developers.appspot.com/setup?state=%2Fchart%2Finteractive%2Fdocs%2Fgallery%2Fannotatedtimeline" id="loginLink" class="button">Sign in</a>
+    </span>
+    
+  </div>
+
+  <form class="gc-search" action="/search/results" method="GET">
+    <div style="width: 405px;" class="searchbox">
+      
+      
+        <span class="button button-blue mini">Google Chart Tools<pre>  X</pre></span>
+      
+      <input style="width: 263px;" name="q" class="q" id="q" placeholder="Search" autocomplete="off" type="text">
+    </div>
+    <button style="top: 0px; left: 424px;" class="button button-blue">
+      <img src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/search.png" alt="Search">
+    </button>
+    
+      <input name="p" id="search_project" value="/chart" type="hidden">
+    
+  </form>
+
+</header>
+
+
+
+</div>
+    
+
+    
+    
+
+    <div id="gc-wrapper" itemscope="" itemtype="http://schema.org/Article">
+      
+      <input id="gc-analytics" value="UA-22084204-3" type="hidden">
+      
+
+      
+
+      <div id="gc-topnav">
+        <div>
+          <ul>
+            
+              
+            
+            <li class=""><a href="https://google-developers.appspot.com/">Home</a></li>
+            
+            <li class="active"><a href="https://google-developers.appspot.com/products/">Products</a></li>
+            
+            <li class=""><a href="https://google-developers.appspot.com/events/">Conferences</a></li>
+            
+            <li class=""><a href="https://google-developers.appspot.com/showcase/">Showcase</a></li>
+            
+            <li class=""><a href="https://google-developers.appspot.com/live/">Live</a></li>
+            
+            <li class=""><a href="https://google-developers.appspot.com/groups/">Groups</a></li>
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      
+      
+
+      
+      
+      
+        <div id="gc-appbar">
+          
+          
+<h1>
+
+  <a href="https://google-developers.appspot.com/chart/">Google Chart Tools</a>
+  <div class="plusone-container">
+    <div id="___plusone_0" style="height: 20px; width: 90px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline;"><iframe title="+1" data-gapiattached="true" allowtransparency="true" src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/fastbutton.htm" name="I0_1358859366254" id="I0_1358859366254" vspace="0" tabindex="0" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" marginwidth="0" marginheight="0" hspace="0" frameborder="0" scrolling="no" width="100%"></iframe></div>
+  </div>
+
+
+
+
+
+
+</h1>
+
+
+          
+        </div>
+      
+      
+
+      
+        
+      <div id="gc-main">
+        
+        
+  
+  
+      
+      
+      <div id="gc-sidebar">
+        
+
+  
+
+
+
+  <nav class="gc-toc"><ul><li class=""><a title="▸" class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/index" data-title="Overview"><span>Overview</span></a><ul style="display: none;"><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/quick_start" data-title="Hello Charts!"><span>Hello Charts!</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/basic_load_libs" data-title="Loading the Libraries"><span>Loading the Libraries</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/basic_preparing_data" data-title="Preparing Data"><span>Preparing Data</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/basic_customizing_chart" data-title="Customizing the Chart"><span>Customizing the Chart</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/basic_draw_chart" data-title="Drawing the Chart"><span>Drawing the Chart</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/basic_interactivity" data-title="Adding Interactivity"><span>Adding Interactivity</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/security_privacy" data-title="Security and Privacy"><span>Security and Privacy</span></a></li></ul></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/gallery" data-title="Chart Gallery"><span>Chart Gallery</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/areachart" data-title="Area Charts"><span>Area Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/barchart" data-title="Bar Charts"><span>Bar Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/bubblechart" data-title="Bubble Charts"><span>Bubble Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/candlestickchart" data-title="Candlestick Charts"><span>Candlestick Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/columnchart" data-title="Column Charts"><span>Column Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/combochart" data-title="Combo Charts"><span>Combo Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/gauge" data-title="Gauge Charts"><span>Gauge Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/geochart" data-title="Geo Charts"><span>Geo Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/linechart" data-title="Line Charts"><span>Line Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart" data-title="Pie Charts"><span>Pie Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart" data-title="Scatter Charts"><span>Scatter Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/steppedareachart" data-title="Stepped Area Charts"><span>Stepped Area Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/table" data-title="Table Charts"><span>Table Charts</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/treemap" data-title="Tree Map Charts"><span>Tree Map Charts</span></a></li></ul></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><span class="tlw-title tlw-control-title" data-title="Drawing Charts">Drawing Charts</span><ul style="display: none;"><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/drawing_charts" data-title="Chart Drawing Techniques"><span>Chart Drawing Techniques</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/drawing_charts#chart.draw" data-title="chart.draw()"><span>chart.draw()</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/drawing_charts#chartwrapper" data-title="ChartWrapper"><span>ChartWrapper</span></a></li></ul></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><span class="tlw-title tlw-control-title" data-title="Customizing Charts">Customizing Charts</span><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery" data-title="Chart Types"><span>Chart Types</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/customizing_charts" data-title="Chart Options"><span>Chart Options</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/customizing_axes" data-title="Axes Options"><span>Axes Options</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/customizing_tooltip_content" data-title="Tooltip Content"><span>Tooltip Content</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#formatters" data-title="Formatters"><span>Formatters</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/dev/index" data-title="Contributing a New Chart"><span>Contributing a New Chart</span></a></li></ul></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/general_dev_tools" data-title="Development Tools"><span>Development Tools</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/library_loading_enhancements" data-title="Library Loading"><span>Library Loading</span></a></li></ul></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><span class="tlw-title tlw-control-title" data-title="Interacting with Charts">Interacting with Charts</span><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/events" data-title="Handling Events"><span>Handling Events</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/animation" data-title="Transition Animation"><span>Transition Animation</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/controls" data-title="Controls and Dashboards"><span>Controls and Dashboards</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/toolbar" data-title="Toolbars"><span>Toolbars</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/drawing_charts#charteditor" data-title="ChartEditor"><span>ChartEditor</span></a></li></ul></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><span class="tlw-title tlw-control-title" data-title="Chart Data">Chart Data</span><ul style="display: none;"><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/datatables_dataviews" data-title="DataTables and DataViews"><span>DataTables and DataViews</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/roles" data-title="Data Roles"><span>Data Roles</span></a></li></ul></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/php_example" data-title="Connecting Your Database"><span>Connecting Your Database</span></a></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/queries" data-title="Querying a Chart Tools Datasource"><span>Querying a Chart Tools Datasource</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/querylanguage" data-title="Query Language Reference"><span>Query Language Reference</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/spreadsheets" data-title="Google Spreadsheets"><span>Google Spreadsheets</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/fusiontables" data-title="Fusion Tables"><span>Fusion Tables</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/dev/implementing_data_source" data-title="Implementing a Datasource"><span>Implementing a Datasource</span></a></li></ul></li></ul></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/reference" data-title="API Reference"><span>API Reference</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#DataTable" data-title="DataTable Class"><span>DataTable Class</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#DataView" data-title="DataView Class"><span>DataView Class</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/roles" data-title="Data Roles"><span>Data Roles</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#chartwrapperobject" data-title="ChartWrapper Class"><span>ChartWrapper Class</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#google_visualization_charteditor" data-title="ChartEditor Class"><span>ChartEditor Class</span></a></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/reference#google_visualization_data" data-title="Data Manipulation Methods"><span>Data Manipulation Methods</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#google_visualization_data_group" data-title="group()"><span>group()</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#google_visualization_data_join" data-title="join ()"><span>join ()</span></a></li></ul></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/reference#formatters" data-title="Formatters"><span>Formatters</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#arrowformatter" data-title="ArrowFormat"><span>ArrowFormat</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#barformatter" data-title="BarFormat"><span>BarFormat</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#colorformatter" data-title="ColorFormat"><span>ColorFormat</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#dateformatter" data-title="DateFormat"><span>DateFormat</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#numberformatter" data-title="NumberFormat"><span>NumberFormat</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#patternformatter" data-title="PatternFormat"><span>PatternFormat</span></a></li></ul></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#GadgetHelper" data-title="GadgetHelper Class"><span>GadgetHelper Class</span></a></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/reference#queryobjects" data-title="Query Classes"><span>Query Classes</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#Query" data-title="Query"><span>Query</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#QueryResponse" data-title="QueryResponse"><span>QueryResponse</span></a></li></ul></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#errordisplay" data-title="Error Display Class"><span>Error Display Class</span></a></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/reference#events" data-title="Events"><span>Events</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#trigger" data-title="trigger()"><span>trigger()</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#addlistener" data-title="addListener()"><span>addListener()</span></a></li></ul></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/reference#standardproperties" data-title="Standard Visualization Methods and Properties"><span>Standard Visualization Methods and Properties</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#visconstructor" data-title="Constructor"><span>Constructor</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#visdraw" data-title="draw()"><span>draw()</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#visgetselection" data-title="getSelection()"><span>getSelection()</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#vissetselection" data-title="setSelection()"><span>setSelection()</span></a></li></ul></li><li class=""><a class="tlw-control tlw-collapsed">▸</a><a class="tlw-title" href="https://google-developers.appspot.com/chart/interactive/docs/reference#assortedmethods" data-title="Assorted Static Methods"><span>Assorted Static Methods</span></a><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#google.visualization.arraytodatatable" data-title="arrayToDataTable()"><span>arrayToDataTable()</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#google.visualization.drawchart" data-title="drawChart()"><span>drawChart()</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/reference#drawToolbar" data-title="drawToolbar()"><span>drawToolbar()</span></a></li></ul></li></ul></li></ul></li><li class=""><a title="▸" class="tlw-control tlw-collapsed">▸</a><span class="tlw-title tlw-control-title" data-title="Examples and Tools">Examples and Tools</span><ul style="display: none;"><li class=""><a href="http://code.google.com/apis/ajax/playground/?type=visualization" data-title="Playground"><span>Playground</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/examples" data-title="Examples"><span>Examples</span></a></li></ul></li><li class=""><a title="▸" class="tlw-control tlw-collapsed">▸</a><span class="tlw-title tlw-control-title" data-title="Community">Community</span><ul style="display: none;"><li class=""><a href="http://groups.google.com/group/google-visualization-api" data-title="Forum"><span>Forum</span></a></li><li class=""><a href="http://code.google.com/p/google-visualization-api-issues/issues/list" data-title="Issues &amp; Requests"><span>Issues &amp; Requests</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/faq" data-title="FAQ"><span>FAQ</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/user_gallery" data-title="Hall of Fame"><span>Hall of Fame</span></a></li></ul></li><li class=""><a title="▸" class="tlw-control tlw-collapsed">▸</a><span class="tlw-title tlw-control-title" data-title="About Chart Tools">About Chart Tools</span><ul style="display: none;"><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/release_notes#whatsnew" data-title="What's New?"><span>What's New?</span></a></li><li class=""><a href="https://google-developers.appspot.com/chart/interactive/docs/release_notes" data-title="Release Notes"><span>Release Notes</span></a></li></ul></li><li class=""><a title="▸" class="tlw-control tlw-collapsed">▸</a><span class="tlw-title tlw-control-title" data-title="Related Chart Tools">Related Chart Tools</span><ul style="display: none;"><li class="deprecated"><a href="https://google-developers.appspot.com/chart/image/" data-title="Image Charts"><span>Image Charts<sup>Deprecated</sup></span></a></li><li class="deprecated"><a href="https://google-developers.appspot.com/chart/infographics/" data-title="Infographics (Pins, Icons, etc.)"><span>Infographics (Pins, Icons, etc.)<sup>Deprecated</sup></span></a></li></ul></li><li class=""><a href="https://google-developers.appspot.com/chart/terms" data-title="Terms of Service"><span>Terms of Service</span></a></li></ul></nav>
+
+
+
+      </div>
+      
+
+      <div id="gc-content">
+        
+        <div>
+  
+          
+  
+  <h1 itemprop="name" class="page-title">Visualization: Annotated Time Line</h1>
+  
+  <div itemprop="articleBody">
+  
+
+
+<div class="toc">
+  <ol>
+  <li><a href="#Overview">Overview</a></li>
+  <li><a href="#Example">Example</a></li>
+  <li><a href="#Loading">Loading</a></li>
+  <li><a href="#Data_Format">Data Format</a></li>
+  <li><a href="#Configuration_Options">Configuration Options</a></li>
+  <li><a href="#Methods">Methods</a></li>
+  <li><a href="#Events">Events</a></li>
+  <li><a href="#Data_Policy">Data Policy</a></li>
+  <li><a href="#notes">Notes</a></li>
+  </ol>
+</div>
+
+<h2><a name="Overview" id="Overview"></a>Overview</h2>
+<p>
+An interactive time series line chart with optional annotations.
+The chart is rendered within the browser using Flash.</p>
+<p class="note"><strong>Important: </strong>To use this visualization, you must specify the height and width of the container
+  element <em>explicitly</em> on your page. So, for example: <code>&lt;div id="chart_div"
+  style="width:400; height:250"&gt;&lt;/div&gt;</code>.</p>
+<p>
+By: Google</p>
+
+<h2><a name="Example" id="Example"></a>Example</h2>
+<iframe src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/annotatedtimeline.htm" frameborder="no" height="300px" scrolling="no" width="750px"></iframe>
+<div class="special"><p><strong>Code it yourself on
+    the <a href="https://code.google.com/apis/ajax/playground/?type=visualization#annotated_time_line">Visualization
+    Playground</a></strong></p></div>
+<pre class="prettyprint lang-js"><span class="pun">&lt;</span><span class="pln">html</span><span class="pun">&gt;</span><span class="pln"><br>&nbsp; </span><span class="pun">&lt;</span><span class="pln">head</span><span class="pun">&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">&lt;</span><span class="pln">script type</span><span class="pun">=</span><span class="str">'text/javascript'</span><span class="pln"> src</span><span class="pun">=</span><span class="str">'http://www.google.com/jsapi'</span><span class="pun">&gt;&lt;/</span><span class="pln">script</span><span class="pun">&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">&lt;</span><span class="pln">script type</span><span class="pun">=</span><span class="str">'text/javascript'</span><span class="pun">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; google</span><span class="pun">.</span><span class="pln">load</span><span class="pun">(</span><span class="str">'visualization'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'1'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="str">'packages'</span><span class="pun">:[</span><span class="str">'annotatedtimeline'</span><span class="pun">]});</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; google</span><span class="pun">.</span><span class="pln">setOnLoadCallback</span><span class="pun">(</span><span class="pln">drawChart</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="kwd">function</span><span class="pln"> drawChart</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> data </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> google</span><span class="pun">.</span><span class="pln">visualization</span><span class="pun">.</span><span class="typ">DataTable</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; data</span><span class="pun">.</span><span class="pln">addColumn</span><span class="pun">(</span><span class="str">'date'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Date'</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; data</span><span class="pun">.</span><span class="pln">addColumn</span><span class="pun">(</span><span class="str">'number'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Sold Pencils'</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; data</span><span class="pun">.</span><span class="pln">addColumn</span><span class="pun">(</span><span class="str">'string'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'title1'</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; data</span><span class="pun">.</span><span class="pln">addColumn</span><span class="pun">(</span><span class="str">'string'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'text1'</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; data</span><span class="pun">.</span><span class="pln">addColumn</span><span class="pun">(</span><span class="str">'number'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Sold Pens'</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; data</span><span class="pun">.</span><span class="pln">addColumn</span><span class="pun">(</span><span class="str">'string'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'title2'</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; data</span><span class="pun">.</span><span class="pln">addColumn</span><span class="pun">(</span><span class="str">'string'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'text2'</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; data</span><span class="pun">.</span><span class="pln">addRows</span><span class="pun">([</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">[</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">2008</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">,</span><span class="lit">1</span><span class="pun">),</span><span class="pln"> </span><span class="lit">30000</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="lit">40645</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">[</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">2008</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">,</span><span class="lit">2</span><span class="pun">),</span><span class="pln"> </span><span class="lit">14045</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="lit">20374</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">[</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">2008</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">,</span><span class="lit">3</span><span class="pun">),</span><span class="pln"> </span><span class="lit">55022</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="lit">50766</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">[</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">2008</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">,</span><span class="lit">4</span><span class="pun">),</span><span class="pln"> </span><span class="lit">75284</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="lit">14334</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Out of Stock'</span><span class="pun">,</span><span class="str">'Ran out of stock on pens at 4pm'</span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">[</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">2008</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">,</span><span class="lit">5</span><span class="pun">),</span><span class="pln"> </span><span class="lit">41476</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Bought Pens'</span><span class="pun">,</span><span class="str">'Bought 200k pens'</span><span class="pun">,</span><span class="pln"> </span><span class="lit">66467</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">],</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">[</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="lit">2008</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">,</span><span class="lit">6</span><span class="pun">),</span><span class="pln"> </span><span class="lit">33322</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="lit">39463</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">]</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">]);</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> chart </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> google</span><span class="pun">.</span><span class="pln">visualization</span><span class="pun">.</span><span class="typ">AnnotatedTimeLine</span><span class="pun">(</span><span class="pln">document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">'chart_div'</span><span class="pun">));</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; chart</span><span class="pun">.</span><span class="pln">draw</span><span class="pun">(</span><span class="pln">data</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">displayAnnotations</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">});</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">&lt;</span><span class="str">/script&gt;<br>&nbsp; &lt;/</span><span class="pln">head</span><span class="pun">&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="pun">&lt;</span><span class="pln">body</span><span class="pun">&gt;</span><span class="pln"><br></span><span style="background-color:#CCCC66; display:block"><span class="pln">&nbsp; &nbsp; </span><span class="com">// Note how you must specify the size of the container element explicitly!</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">&lt;</span><span class="pln">div id</span><span class="pun">=</span><span class="str">'chart_div'</span><span class="pln"> style</span><span class="pun">=</span><span class="str">'width: 700px; height: 240px;'</span><span class="pun">&gt;&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></span><span class="pln"><br>&nbsp; </span><span class="pun">&lt;</span><span class="str">/body&gt;<br>&lt;/</span><span class="pln">html</span><span class="pun">&gt;</span></pre>
+<h2><a name="Loading" id="Loading"></a>Loading</h2>
+<p>
+The <code>google.load</code> package name is <code>"annotatedtimeline"</code></p>
+
+<pre class="prettyprint"><span class="pln">&nbsp; google</span><span class="pun">.</span><span class="pln">load</span><span class="pun">(</span><span class="str">"visualization"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"1"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">packages</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="str">'annotatedtimeline'</span><span class="pun">]});</span></pre>
+
+<p>
+The visualization's class name is <code>google.visualization.AnnotatedTimeLine</code></p>
+
+<pre class="prettyprint"><span class="pln">&nbsp; </span><span class="kwd">var</span><span class="pln"> visualization </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> google</span><span class="pun">.</span><span class="pln">visualization</span><span class="pun">.</span><span class="typ">AnnotatedTimeLine</span><span class="pun">(</span><span class="pln">container</span><span class="pun">);</span></pre>
+
+<h2><a name="Data_Format" id="Data_Format"></a>Data Format</h2>
+<p>You can display one or more lines on your chart. Each row represents an X position
+  on the chart--that is, a specific time; each line
+  is described by a set of one to three columns.</p>
+<ul>
+  <li>The first column is of type <code>date</code> or <code>datetime</code>, and
+    specifies the X value of the point on the chart. If this column
+    is of type <code>date</code> (and not <code>datetime</code>)
+    then the smallest time resolution on the X axis will be one day.</li>
+  <li>Each data line is then described by a set of one to three additional columns
+    as described here:
+    <ul>
+      <li>Y value - [<em>Required, Number</em>] The first column in each
+        set describes the value of the line at the corresponding time from the first
+        column. The column label is displayed on the chart as the title of
+        that line.</li>
+      <li>Annotation title - [<em>Optional, String</em>] If a string column
+        follows the value column, and the <code>displayAnnotations</code> option
+        is true, this column holds a short title describing this point. For instance,
+        if this line represents temperature in Brazil, and this point is a very high
+        number, the title could be "Hottest day on record".</li>
+      <li>Annotation text - [<em>Optional string</em>] If a second string
+        column exists for this series, the cell value will be used as additional
+        descriptive text for this point. You must set the option <code>displayAnnotations</code> to
+        true to use this column. You can use HTML tags,
+        if you set <code>allowHtml</code> to <code>true</code>;
+        there is essentially no size limit, but note that excessively long entries
+        might overflow the display section.
+        You are not required to have this column even if
+        you have an annotation title column for this point. The column label is not
+        used by the chart. For example, if this were the hottest day on record point,
+        you might say something like "Next closest day was 10 degrees cooler!".</li>
+    </ul>
+  </li>
+  </ul>
+<h2><a name="Configuration_Options" id="Configuration_Options"></a>Configuration Options</h2>
+<table>
+  <tbody><tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>allowHtml</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td> If set to true, any annotation text that includes HTML tags will be rendered
+      as HTML.</td>
+  </tr>
+  <tr>
+    <td>allowRedraw</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td><p>Enables a more efficient redrawing technique for the second and later calls
+      to <code>draw()</code> on this visualization. It only redraws the chart area. To use this
+      option, you must fulfill the following requirements:</p>
+      <ul>
+        <li>allowRedraw must be true</li>
+        <li>displayAnnotations must be false (that is, you cannot show annotations)</li>
+        <li>you must pass in the same options and values (except for the allowRedraw
+          and displayAnnotations) as in your first call to <code>draw()</code>.</li>
+      </ul></td>
+  </tr>
+  <tr>
+    <td>allValuesSuffix</td>
+    <td>string</td>
+    <td>none</td>
+    <td>A suffix to be added to all values in the scales and the legend. </td>
+  </tr>
+  <tr>
+    <td>annotationsWidth</td>
+    <td>number</td>
+    <td>25</td>
+    <td>The width (in percent) of the annotations area, out of the entire chart area.
+      Must be a number in the range 5-80. </td>
+  </tr>
+  <tr>
+    <td>colors</td>
+    <td>Array of strings</td>
+    <td>Default colors</td>
+    <td>The colors to use for the chart lines and labels. An array of strings. Each
+      element is a string in a valid HTML color format. For example 'red' or '#00cc00'. </td>
+  </tr>
+  <tr>
+    <td>dateFormat</td>
+    <td>string</td>
+    <td>Either 'MMMM dd, yyyy' or 'HH:mm MMMM dd, yyyy', depending on the type of
+      the first column (date, or datetime, respectively).</td>
+    <td>The format used to display the date information in the top right corner.
+      The format of this field is as specified by the <a href="http://icu-project.org/apiref/icu4j/com/ibm/icu/text/SimpleDateFormat.html"> java
+      SimpleDateFormat class.</a></td>
+  </tr>
+  <tr>
+    <td>displayAnnotations</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>If set to true, the chart will show annotations on top of selected values.
+      When this option is set to true, after every numeric column, two optional annotation
+      string columns can be added, one for the annotation title and one for the annotation
+      text. </td>
+  </tr>
+  <tr>
+    <td>displayAnnotationsFilter</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>If set to true, the chart will display a filter contol to filter annotations.
+      Use this option when there are many annotations. </td>
+  </tr>
+  <tr>
+    <td>displayDateBarSeparator</td>
+    <td>boolean</td>
+    <td>true</td>
+    <td>Whether to display a small bar separator ( | ) between the series values
+      and the date in the legend, where true means yes.</td>
+  </tr>
+  <tr>
+    <td>displayExactValues</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>Whether to display a shortened, rounded version of the values on the top
+      of the graph, to save space; false indicates that it may. For example, if set
+      to false, 56123.45 might be displayed as 56.12k.</td>
+  </tr>
+  <tr>
+    <td>displayLegendDots</td>
+    <td>boolean</td>
+    <td>true</td>
+    <td>Whether to display dots next to the values in the legend text, where true
+      means yes.</td>
+  </tr>
+  <tr>
+    <td>displayLegendValues</td>
+    <td>boolean</td>
+    <td>true</td>
+    <td>Whether to display the highlighted values in the legend, where true means
+      yes.</td>
+  </tr>
+ <tr>
+   <td>displayRangeSelector</td>
+   <td>boolean</td>
+   <td>true</td>
+   <td><p>Whether to show the zoom range selection area (the area at the bottom of the
+     chart), where false means no.</p>
+       <p>The outline in the zoom selector is a log scale version of the last series in
+       the chart, scaled to fit the height of the zoom selector.</p>
+  </td>
+ </tr>
+  <tr>
+    <td>displayZoomButtons</td>
+    <td>boolean</td>
+    <td>true</td>
+    <td>Whether to show the zoom links ("1d 5d 1m" and so on), where false means
+      no.</td>
+  </tr>
+  <tr>
+    <td>fill</td>
+    <td>number</td>
+    <td>0</td>
+    <td>A number from 0—100 (inclusive) specifying the alpha of the fill below
+      each line in the line graph. 100 means 100% opaque fill, 0 means no fill
+      at all. The fill color is the same color as the line above it.</td>
+  </tr>
+  <tr>
+    <td>highlightDot</td>
+    <td>string</td>
+    <td>'nearest'</td>
+    <td><p>Which dot on the series to highlight, and corresponding values to show
+        in the legend. Select from one of these values:</p>
+        <ul>
+          <li>'nearest' - The values closest along the X axis to the mouse.</li>
+          <li>'last' - The next set of values to the left of the mouse.</li>
+        </ul></td>
+  </tr>
+  <tr>
+    <td>legendPosition</td>
+    <td>string</td>
+    <td>'sameRow'</td>
+    <td>Whether to put the colored legend on the same row with the zoom buttons and
+      the date ('sameRow'), or on a new row ('newRow').</td>
+  </tr>
+  <tr>
+    <td>max</td>
+    <td>number</td>
+    <td>automatic</td>
+    <td>The maximum value to show on the Y axis. If the maximum data point exceeds
+      this value, this setting will be ignored, and the chart will be adjusted to
+      show the next major tick mark above the maximum data point. This will take
+      precedence over the Y axis maximum determined by <code>scaleType</code>.</td>
+  </tr>
+  <tr>
+    <td>min</td>
+    <td>number</td>
+    <td>automatic</td>
+    <td>The minimum value to show on the Y axis. If the minimum data point is less
+      than this value, this setting will be ignored, and the chart will be adjusted
+      to show the next major tick mark below the minimum data point. This will take
+      precedence over the Y axis minimum determined by <code>scaleType</code>.</td>
+  </tr>
+  <tr>
+    <td>numberFormats</td>
+    <td>String, or a map of number:String pairs</td>
+    <td>automatic</td>
+    <td><p>Specifies the number format patterns to be used to format the values at
+        the top of the graph.</p>
+        <p>The patterns should be in the format as specified by the <a href="http://icu-project.org/apiref/icu4j/com/ibm/icu/text/DecimalFormat.html"> java
+            DecimalFormat class.</a></p>
+      <ul>
+          <li>If not specified, the default format pattern is used.</li>
+        <li>If a single string pattern is specified, it is used for all of the values.</li>
+        <li>If a map is specified, the keys are (zero-based) indexes of series, and
+          the values are the patterns to be used to format the specified series.<br>
+          You are not required to include a format for every series on the chart;
+          any unspecified series will use the default format.</li>
+      </ul>
+      <p>If this option is specified, the <code>displayExactValues</code> option
+        is ignored.</p></td>
+  </tr>
+  <tr>
+    <td>scaleColumns</td>
+    <td>Array of numbers</td>
+    <td>Automatic</td>
+    <td><p>Specifies which values to show on the Y axis tick marks in the graph.
+        The default is to have a single scale on the right side, which applies to
+        both series; but you can have different sides of the graph scaled to different
+        series values.</p>
+        <p>This option takes an array of zero to three numbers specifying the (zero-based)
+          index of the series to use as the scale value. Where these values are shown
+          depends on how many values you include in your array:</p>
+      <ul>
+          <li>If you specify an empty array, the chart will not show Y values next
+            to the tick marks.</li>
+        <li>If you specify one value, the scale of the indicated series will be displayed
+          on the right side of the chart only.</li>
+        <li> If you specify two values, a the scale for the second series will be
+          added to the right of the chart.</li>
+        <li> If you specify three values, a scale for the third series will be added
+          to the middle of the chart.</li>
+        <li>Any values after the third in the array will be ignored.</li>
+      </ul>
+      <p> When displaying more than one scale, it is advisable to set the <code>scaleType</code> option
+        to either 'allfixed' or 'allmaximized'. </p></td>
+  </tr>
+  <tr>
+    <td>scaleType</td>
+    <td>string</td>
+    <td>'fixed'</td>
+    <td><p>Sets the maximum and minimum values shown on the Y axis. The following
+        options are available:</p>
+        <ul>
+          <li>'maximized' - The Y axis will span the minimum to the maximum
+            values of the series. If you have more than one series, use allmaximized.</li>
+          <li> 'fixed' [<em>default</em>] - The Y axis varies, depending on the data
+            values values:
+            <ul>
+                <li>If all values are &gt;=0, the Y axis will span from zero to the
+                  maximum data value.</li>
+              <li>If all values are &lt;=0, the Y axis will span from zero to the
+                minimum data value.</li>
+              <li>If values are both positive and negative, the Y axis will range
+                from the series maximum to the series minimum.<br>
+                        <br>
+                For multiple series, use 'allfixed'.</li>
+            </ul>
+          </li>
+          <li>'allmaximized' - Same as 'maximized,' but used when multiple scales
+            are displayed. Both charts will be maximized within the same scale, which
+            means that one will be misrepresented against the Y axis, but hovering
+            over each series will display it's true value.</li>
+          <li>'allfixed' - Same as 'fixed,' but used when multiple scales are displayed.
+            This setting adjusts each scale to the series to which it applies (use
+            this in conjunction with <code>scaleColumns</code>).</li>
+          </ul>
+        <p> If you specify the min and/or max options, they will take precedence
+          over the minimum and maximum values determined by your scale type.</p></td>
+  </tr>
+  <tr>
+    <td>thickness</td>
+    <td>number</td>
+    <td>0</td>
+    <td>A number from 0—10 (inclusive) specifying the thickness of the lines,
+      where 0 is the thinnest.</td>
+  </tr>
+  <tr>
+    <td>wmode</td>
+    <td>string</td>
+    <td>'window'</td>
+    <td>The <a href="http://www.google.com/search?hl=en&amp;q=flash+wmode+window+mode&amp;btnG=Google+Search">Window
+        Mode (wmode)</a> parameter for the Flash chart. Available values are: 'opaque',
+        'window' or 'transparent'.</td>
+  </tr>
+  <tr>
+    <td>zoomEndTime</td>
+    <td>Date</td>
+    <td>none</td>
+    <td>Sets the end date/time of the selected zoom range.</td>
+  </tr>
+  <tr>
+    <td>zoomStartTime</td>
+    <td>Date</td>
+    <td>none</td>
+    <td>Sets the start date/time of the selected zoom range.</td>
+  </tr>
+</tbody></table>
+
+<h2><a name="Methods" id="Methods"></a>Methods</h2>
+<table>
+  <tbody><tr>
+    <th>Method</th>
+    <th>Return Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>draw(data, options)</code></td>
+    <td>none</td>
+    <td>Draws the chart. You can speed up response time for the second and later
+      calls to <code>draw()</code> by using the allowRedraw property.</td>
+  </tr>
+  <tr>
+    <td><code>getSelection()</code></td>
+    <td>Array of selection elements</td>
+    <td>Standard <code>getSelection()</code> implementation. Selected elements are
+      cell elements. Only one cell can be selected at a time by the user.</td>
+  </tr>
+  <tr>
+    <td><code>getVisibleChartRange()</code></td>
+    <td>An object with <code>start</code> and <code>end</code> properties</td>
+    <td>Returns an object with <code>start</code> and <code>end</code>
+      properties, which each one of them is a <code>Date</code> object,
+      representing the current time selection.</td>
+  </tr>
+  <tr>
+    <td><code>hideDataColumns(<em>columnIndexes</em>)</code></td>
+    <td>none</td>
+    <td>Hides the specified data series from the chart.
+      Accepts one parameter which can be a number or an array of numbers,
+      in which 0 refers to the first data series, and so on.</td>
+  </tr>
+  <tr>
+    <td><code>setVisibleChartRange(<em>start</em>, <em>end</em>)</code></td>
+    <td>none</td>
+    <td>Sets the visible range (zoom) to the specified range.
+      Accepts two parameters of type <code>Date</code> that represent the
+      first and last times of the wanted selected visible range. Set <em>start</em> to
+      null to include everything from the earliest date to <em>end</em>; set <em>end</em> to
+      null to include everything from <em>start</em> to the last date.</td>
+  </tr>
+  <tr>
+    <td><code>showDataColumns(<em>columnIndexes</em>)</code></td>
+    <td>none</td>
+    <td>Shows the specified data series from the chart, after they were hidden
+      using <code>hideDataColumns</code> method.
+      Accepts one parameter which can be a number or an array of numbers,
+      in which 0 refers to the first data series, and so on.</td>
+  </tr>
+</tbody></table>
+
+<h2><a name="Events" id="Events"></a>Events</h2>
+<table>
+  <tbody><tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Properties</th>
+  </tr>
+  <tr>
+    <td>rangechange</td>
+    <td>Zoom range changed. Fired after the user modified the visible time range
+      but not after a call to <code>setVisibleChartRange</code> method.<br>
+      Note: It is advised not to use the event properties, but rather get them
+      by calling <code>getVisibleChartRange</code> method.</td>
+    <td><ul>
+      <li><code>start</code>: Date. The start time of the zoom range.</li>
+      <li>        <code>end</code>: Date. The end time of the zoom range. </li>
+      </ul>    </td>
+  </tr>
+  <tr>
+    <td>ready</td>
+    <td>The chart is ready for external method calls. If you want to interact
+      with the chart, and call methods after you draw it, you should set up a
+      listener for this event <i>before</i> you call the <code>draw</code> method,
+      and call them only after the event was fired</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>select</td>
+    <td>When the user clicks on an annotation flag (marker), the corresponding
+      cell in the data table is selected. The visualization then fires this event.</td>
+    <td>None</td>
+  </tr>
+</tbody></table>
+<p><strong>Note</strong>: Because of certain limitations, events might not be
+  thrown if you are accessing the page in your browser as a file
+  (e.g., "file://") rather than from a server (e.g., "http://www").</p>
+
+<h2><a name="Data_Policy" id="Data_Policy"></a>Data Policy</h2>
+<p>
+All code and data are processed and rendered in the browser. No data is sent to any server.</p>
+<h2><a name="notes" id="notes"></a>Notes</h2>
+<p> Because of Flash security settings,
+  this (and all Flash-based visualizations) might not work correctly when accessed
+  from a file location in the browser (e.g., file:///c:/webhost/myhost/myviz.html)
+  rather than from a web server URL (e.g., http://www.myhost.com/myviz.html). This
+  is typically a testing issue only. You can overcome this issue as described on
+  the <a href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager02.html">Macromedia
+  web site</a>.</p>
+<!---e end body text ---->
+
+  
+  </div>
+
+  
+        </div>
+        
+<div id="gc-content-footer">
+
+
+
+<div itemprop="datePublished" content="2012-03-26T22:15:09.356310" id="gc-content-last-updated">Last updated March 26, 2012.</div>
+
+</div>
+
+
+
+
+      </div>
+  
+
+        
+      </div>
+        
+      
+
+      
+      
+      <footer id="gc-footer">
+        <div id="gc-copyright">
+          <a href="https://google-developers.appspot.com/">
+            <img id="developers-logo-footer" src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/developers-logo-footer.png" alt="Google Developers logo" style="vertical-align: center; float: left">
+          </a>
+          <ul>
+            <li><a href="http://www.google.com/">Google</a></li>
+            <li><a href="https://google-developers.appspot.com/readme/terms">Terms of Service</a></li>
+            <li><a href="http://www.google.com/intl/en/privacy/">Privacy Policy</a></li>
+            <li><a href="https://google-developers.appspot.com/jobs">Jobs</a></li>
+            <li><a class="google-feedback" data-p="81425" data-b="Documentation" data-v="devsite-20130118-rc00.364681418466479150" href="">Report a bug</a></li>
+          </ul>
+        </div>
+        
+        <div id="gc-language">
+          <ul>
+            <li>
+              <form id="setlang" action="/i18n/setlang/" method="post">
+                <div style="display:none"><input name="csrfmiddlewaretoken" value="6442a715eaa25d3a36d7d1efcd2085f4" type="hidden"></div>
+                <select style="display: none;" id="footer_language" name="language">
+                  
+                  
+                  <option value="ar">
+                    العربيّة
+                  </option>
+                  
+                  <option value="bg">
+                    български
+                  </option>
+                  
+                  <option value="ca">
+                    català
+                  </option>
+                  
+                  <option value="zh-cn">
+                    简体中文
+                  </option>
+                  
+                  <option value="zh-tw">
+                    繁體中文
+                  </option>
+                  
+                  <option value="hr">
+                    Hrvatski
+                  </option>
+                  
+                  <option value="cs">
+                    česky
+                  </option>
+                  
+                  <option value="da">
+                    Dansk
+                  </option>
+                  
+                  <option value="nl">
+                    Nederlands
+                  </option>
+                  
+                  <option value="en" selected="selected">
+                    English
+                  </option>
+                  
+                  <option value="fa">
+                    فارسی
+                  </option>
+                  
+                  <option value="fi">
+                    suomi
+                  </option>
+                  
+                  <option value="fr">
+                    Français
+                  </option>
+                  
+                  <option value="de">
+                    Deutsch
+                  </option>
+                  
+                  <option value="el">
+                    Ελληνικά
+                  </option>
+                  
+                  <option value="he">
+                    עברית
+                  </option>
+                  
+                  <option value="hi">
+                    Hindi
+                  </option>
+                  
+                  <option value="hu">
+                    Magyar
+                  </option>
+                  
+                  <option value="id">
+                    Bahasa Indonesia
+                  </option>
+                  
+                  <option value="it">
+                    italiano
+                  </option>
+                  
+                  <option value="ja">
+                    日本語
+                  </option>
+                  
+                  <option value="ko">
+                    한국어
+                  </option>
+                  
+                  <option value="lv">
+                    latviešu
+                  </option>
+                  
+                  <option value="lt">
+                    Lithuanian
+                  </option>
+                  
+                  <option value="nb">
+                    Norsk (bokmål)
+                  </option>
+                  
+                  <option value="nn">
+                    Norsk (nynorsk)
+                  </option>
+                  
+                  <option value="pl">
+                    polski
+                  </option>
+                  
+                  <option value="pt-br">
+                    Português Brasileiro
+                  </option>
+                  
+                  <option value="pt">
+                    Português
+                  </option>
+                  
+                  <option value="ro">
+                    Română
+                  </option>
+                  
+                  <option value="ru">
+                    Русский
+                  </option>
+                  
+                  <option value="sr">
+                    српски
+                  </option>
+                  
+                  <option value="sk">
+                    slovenský
+                  </option>
+                  
+                  <option value="sl">
+                    Slovenščina
+                  </option>
+                  
+                  <option value="es">
+                    español
+                  </option>
+                  
+                  <option value="sv">
+                    Svenska
+                  </option>
+                  
+                  <option value="th">
+                    Thai
+                  </option>
+                  
+                  <option value="tr">
+                    Türkçe
+                  </option>
+                  
+                  <option value="uk">
+                    Українська
+                  </option>
+                  
+                  <option value="vi">
+                    Vietnamese
+                  </option>
+                  
+                </select><span class="kd-button kd-menubutton kd-select"><div style="display: inline-block;"><div style="float: left;" class="label">
+                    English
+                  </div><div class="kd-disclosureindicator"></div></div></span>
+              </form>
+            </li>
+          </ul>
+        </div>
+        
+      </footer>
+      
+      
+    </div>
+    <div id="needAuth" class="msgDialogContent">
+      
+      <h1>Authentication required</h1>
+      
+      <div>
+        You need to be signed in with <a href="http://www.google.com/+">Google+</a> to do that.
+      </div>
+      <button>Sign in</button>
+      <button>Cancel</button>
+    </div>
+    <div id="signingIn" class="msgDialogContent">
+      
+      <h1>Signing you in...</h1>
+      <div>
+        
+        Google Developers needs your permission to do that.
+      </div>
+      
+      <button>Try again</button>
+      
+      <button>Cancel</button>
+    </div>
+    <script src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/script_foot.js"></script>
+    <script>
+      (function($) {
+        devsite.devsite.Init($, null, '');
+      })(jQuery);
+
+      
+      devsite.localInit = function() {
+        
+      };
+      
+    </script>
+    <!-- Google Code for PXL - Developers - Codesite - HP - 90d Remarketing List -->
+    <script type="text/javascript">
+    $('#setlang select').each(function() {
+      if ($.browser.msie) {
+        $(this).change(function() {
+          $('#setlang').submit();
+        });
+      } else {
+        $(this).kdSelect({'change': function() {
+          $('#setlang').submit();
+        }});
+      }
+    });
+    </script><ul class="kd-menulist" style="position: absolute; left: 1041px; top: 7062.67px; display: none;"><li style="" class="kd-menulistitem">
+                    العربيّة
+                  </li><li class="kd-menulistitem">
+                    български
+                  </li><li class="kd-menulistitem">
+                    català
+                  </li><li class="kd-menulistitem">
+                    简体中文
+                  </li><li class="kd-menulistitem">
+                    繁體中文
+                  </li><li class="kd-menulistitem">
+                    Hrvatski
+                  </li><li class="kd-menulistitem">
+                    česky
+                  </li><li class="kd-menulistitem">
+                    Dansk
+                  </li><li class="kd-menulistitem">
+                    Nederlands
+                  </li><li class="kd-menulistitem selected">
+                    English
+                  </li><li class="kd-menulistitem">
+                    فارسی
+                  </li><li class="kd-menulistitem">
+                    suomi
+                  </li><li class="kd-menulistitem">
+                    Français
+                  </li><li class="kd-menulistitem">
+                    Deutsch
+                  </li><li class="kd-menulistitem">
+                    Ελληνικά
+                  </li><li class="kd-menulistitem">
+                    עברית
+                  </li><li class="kd-menulistitem">
+                    Hindi
+                  </li><li class="kd-menulistitem">
+                    Magyar
+                  </li><li class="kd-menulistitem">
+                    Bahasa Indonesia
+                  </li><li class="kd-menulistitem">
+                    italiano
+                  </li><li class="kd-menulistitem">
+                    日本語
+                  </li><li class="kd-menulistitem">
+                    한국어
+                  </li><li class="kd-menulistitem">
+                    latviešu
+                  </li><li class="kd-menulistitem">
+                    Lithuanian
+                  </li><li class="kd-menulistitem">
+                    Norsk (bokmål)
+                  </li><li class="kd-menulistitem">
+                    Norsk (nynorsk)
+                  </li><li class="kd-menulistitem">
+                    polski
+                  </li><li class="kd-menulistitem">
+                    Português Brasileiro
+                  </li><li class="kd-menulistitem">
+                    Português
+                  </li><li class="kd-menulistitem">
+                    Română
+                  </li><li class="kd-menulistitem">
+                    Русский
+                  </li><li class="kd-menulistitem">
+                    српски
+                  </li><li class="kd-menulistitem">
+                    slovenský
+                  </li><li class="kd-menulistitem">
+                    Slovenščina
+                  </li><li class="kd-menulistitem">
+                    español
+                  </li><li class="kd-menulistitem">
+                    Svenska
+                  </li><li class="kd-menulistitem">
+                    Thai
+                  </li><li class="kd-menulistitem">
+                    Türkçe
+                  </li><li class="kd-menulistitem">
+                    Українська
+                  </li><li class="kd-menulistitem">
+                    Vietnamese
+                  </li></ul>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 992540712;
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "ffffff";
+      var google_conversion_label = "qio2CKCPwQMQqPCj2QM";
+      var google_conversion_value = 0;
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/conversion.js">
+    </script><img src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/a.gif" height="1" border="0" width="1">
+
+    
+
+    <script>
+      
+      google.load('visualization', '1', {packages: ['table']});
+    </script><script src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/a" type="text/javascript"></script><script src="Visualization%20%20Annotated%20Time%20Line%20-%20Google%20Chart%20Tools%20%E2%80%94%20Google%20Developers-Dateien/formatdedefaulttable.js" type="text/javascript"></script>
+
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/992540712/?label=qio2CKCPwQMQqPCj2QM&amp;guid=ON&amp;script=0"/>
+      </div>
+    </noscript>
+    
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    // Render any carousels on the page
+    $('.carousel').carousel();
+    // Render any feed widgets on the page
+    
+    $('.feed').rss();
+    $('.feed-plain').rss();
+    // Render any OSS widgets on the page.
+    $('.oss').oss();
+    });
+</script>
+
+<script type="text/javascript" defer="defer">
+
+
+$(document).ready(function() {
+    contentTimer.name = 'content';
+    contentTimer.tick('ol');
+    window.jstiming.report(contentTimer);
+
+    // Boilerplate javascript to enable the plusone button
+    var po = document.createElement('script'); po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js?onload=devsite_plusoneLoaded';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+});
+</script>
+
+
+
+
+  
+
+  
+
+</body></html>

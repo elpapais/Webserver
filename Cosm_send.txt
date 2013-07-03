@@ -1,0 +1,25 @@
+Senden an Webserver www.cosm.com:
+
+PUT /v2/feeds/116164.csv HTTP/1.1<\r><\n>
+Host: api.cosm.com<\r><\n>
+X-ApiKey: t5oM-cXVCGkP-Rbb3m8xa8Avwc-SAKxJV0l1bVUvaEdoTT0g<\r><\n>
+User-Agent: Datalogger_One<\r><\n>
+Content-Length: 4<\r><\n>
+Content-Type: text/csv<\r><\n>
+Connection: close<\r><\n>
+<\r><\n>
+0,25<\r><\n>
+
+Antwort vom Webserver:
+
+HTTP/1.1 200 OK<\r><\n>
+Date: Mon, 04 Mar 2013 07:48:59 GMT<\r><\n>
+Content-Type: text/plain; charset=utf-8<\r><\n>
+Content-Length: 1<\r><\n>
+Connection: close<\r><\n>
+X-Request-Id: be2cee34ef096d483fb2f671edde3724ef15a5db<\r><\n>
+Cache-Control: max-age=0<\r><\n>
+Vary: Accept-Encoding<\r><\n>
+<\r><\n>
+
+ 

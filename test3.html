@@ -1,0 +1,26 @@
+<html>
+<body>
+<script language="JavaScript" type="text/javascript">
+function EingabeAusgabe() {
+  var w = true;
+  while( w ) {
+    w = false;
+    var s = window.prompt(
+             "Bitte String eingeben:",
+             " ... " );
+    window.status = s;
+    if( s != null && s != "" && s != " ... " )
+      alert( "Eingabe-String:\n" + s );
+    else
+      w = confirm(
+           "Eingabe fehlt. Nochmal?" );
+  }
+  window.status = "";
+  location.reload();
+}
+</script>
+<input type="button"
+       value="Eingabe/Ausgabe testen"
+       onClick="EingabeAusgabe()">
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="annotatedtimeline_data/jsapi"></script>
+  <script type="text/javascript">
+    function Timer(){this.t={};this.tick=function(a,b){this.t[a]=[(new Date).getTime(),b]};this.tick("start")}var loadTimer=new Timer;window.jstiming={Timer:Timer,load:loadTimer};if(window.external&&window.external.pageT)window.jstiming.pt=window.external.pageT;if(window.jstiming)window.jstiming.report=function(g,d){var c="";if(window.jstiming.pt){c+="&srt="+window.jstiming.pt;delete window.jstiming.pt}if(window.external&&window.external.tran)c+="&tran="+window.external.tran;var a=g.t,h=a.start;delete a.start;var i=[],e=[];for(var b in a){if(b.indexOf("_")==0)continue;var f=a[b][1];if(f)a[f][0]&&e.push(b+"."+(a[b][0]-a[f][0]));else h&&i.push(b+"."+(a[b][0]-h[0]))}if(d)for(var j in d)c+="&"+j+"="+d[j];(new Image).src=["http://csi.gstatic.com/csi?v=3","&s=gviz&action=",g.name,e.length?"&it="+e.join(",")+c:c,"&rt=",i.join(",")].join("")};
+  </script>
+
+  <script type="text/javascript">
+
+    google.load('visualization', '1', {'packages': ['annotatedtimeline']});
+
+    var csi_timer = new window.jstiming.Timer();
+    csi_timer.name = 'docs_atl';
+
+    google.setOnLoadCallback(initAndDraw);
+
+    function initAndDraw() {
+      csi_timer.tick('load');
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'Date');
+      data.addColumn('number', 'Sold Pencils');
+      data.addColumn('string', 'title1');
+      data.addColumn('string', 'text1');
+      data.addColumn('number', 'Sold Pens');
+      data.addColumn('string', 'title2');
+      data.addColumn('string', 'text2');
+      data.addRows([
+          [new Date(2008, 1 ,1), 30000, undefined, undefined, 40645, undefined, undefined],
+          [new Date(2008, 1 ,2), 14045, undefined, undefined, 20374, undefined, undefined],
+          [new Date(2008, 1 ,3), 55022, undefined, undefined, 50766, undefined, undefined],
+          [new Date(2008, 1 ,4), 75284, undefined, undefined, 14334, 'Out of Stock','Ran out of stock on pens at 4pm'],
+          [new Date(2008, 1 ,5), 41476, 'Bought Pens','Bought 200k pens', 66467, undefined, undefined],
+          [new Date(2008, 1 ,6), 33322, undefined, undefined, 39463, undefined, undefined]
+      ]);
+
+      csi_timer.tick('data');
+
+      var chart = new google.visualization.AnnotatedTimeLine(document.getElementById('chart_div'));
+
+      csi_timer.tick('new');
+
+      chart.draw(data, {displayAnnotations: true});
+
+      csi_timer.tick('draw');
+      window.jstiming.report(csi_timer);
+    }
+
+  </script><script src="annotatedtimeline_data/a" type="text/javascript"></script><script src="annotatedtimeline_data/formatdedefaultannotatedtimelinede.js" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="annotatedtimeline_data/annotatedtimeline.css">
+
+</head>
+<body>
+<div id="chart_div" style="width: 700px; height: 240px;"><table class="annotatedtimelinetable" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top"><td><div style="width: 525px;" id="chartDiv1"><embed src="annotatedtimeline_data/chart.swf" type="application/x-shockwave-flash" menu="false" name="chartTag3658860903684501" id="chartTag3658860903684501" allowscriptaccess="always" wmode="window" flashvars="fieldSeparator=%2C&amp;objectSeparator=%3A%3A&amp;sparklineType=static&amp;clientId=gviz&amp;homeAddress=https%3A%2F%2Fwww.gstatic.com%2Fcharts%2Fannotatedtimeline%2F0%2Fde&amp;displaySeconds=max&amp;annotationLabels=some-annotations&amp;fill=0&amp;lclt=0&amp;displayExactValues=false&amp;getdataTimeout=15000&amp;annotationsFilter=off&amp;colorAnnotations=true&amp;wmode=window&amp;disableHandOnMaxZoom=true&amp;highlightClosestDot=true&amp;messages=%5Bobject%20Object%5D&amp;displayZoomButtons=true&amp;minDisplaySeconds=86400&amp;dateFormat=MMMM%20dd%2C%20yyyy&amp;minTimelineGranularity=86400&amp;showSparkline=true&amp;displayBorder=true&amp;displayMouseOverValues=true&amp;displayDateBarSeparator=true&amp;displayLegendDots=true&amp;data_86400=INTERVAL%3D86400%0ACOLUMNS%3DL0%2CL1%0ADATA%3D%0A1201824000%2C30000%2C40645%0A1201910400%2C14045%2C20374%0A1201996800%2C55022%2C50766%0A1202083200%2C75284%2C14334%0A1202169600%2C41476%2C66467%0A1202256000%2C33322%2C39463%0A&amp;labels=L0%2CL1&amp;labelsDisplayNames=Sold%2520Pencils%2CSold%2520Pens&amp;chartHeight=240&amp;chartWidth=525&amp;globalChartId=chartDiv1&amp;viewpoints=name%253AMainViewPoint%252Cheight%253A262%252Cdisplay%253Avisible%252CtopMargin%253A0&amp;dataSources=name%253AL0%252CmaxSeconds%253A63072000%253A%253Aname%253AL1%252CmaxSeconds%253A63072000&amp;layers=dataSource%253AL0%252Cviewpoint%253AMainViewPoint%252Cname%253ABackgroundLayer%252Carity%253AUnique%252Ctype%253Asimple%253A%253AdataSource%253AL0%252Cviewpoint%253AMainViewPoint%252Cname%253APriceLinesLayer%252Carity%253AUnique%252Ctype%253Asimple%253A%253AdataSource%253AL0%252Cviewpoint%253AMainViewPoint%252Cname%253ABottomBarLayer%252Carity%253AUnique%252Ctype%253Asimple%253A%253AdataSource%253AL0%252Cviewpoint%253AMainViewPoint%252Cname%253ALineChartLayer%252Carity%253AMultiple%252Ctype%253Asimple%253A%253AdataSource%253AL1%252Cviewpoint%253AMainViewPoint%252Cname%253ALineChartLayer%252Carity%253AMultiple%252Ctype%253Asimple%253A%253AdataSource%253AL0%252Cviewpoint%253AMainViewPoint%252Cname%253ADateLinesLayer%252Carity%253AUnique%252Ctype%253Asimple%252CtickPosition%253A0%252ChasText%253Atrue%253A%253AdataSource%253AL0%252Cviewpoint%253AMainViewPoint%252Cname%253APinPointsLayer%252Carity%253AMultiple%252Ctype%253Asimple&amp;zoomlevels=text%253A1m%252Cvalue%253A2592000%253A%253Atext%253A3m%252Cvalue%253A7862400%253A%253Atext%253A6m%252Cvalue%253A15724800%253A%253Atext%253A1Y%252Cvalue%253A31536000%253A%253Atext%253AMax%252Cvalue%253A63072000&amp;detailLevels=from%253A0%252Cto%253A15724800%252Cinterval%253A86400%253A%253Afrom%253A15724801%252Cto%253A157680000%252Cinterval%253A604800%253A%253Afrom%253A157680001%252Cto%253A3153600000%252Cinterval%253A2592000&amp;dataURL=https%3A%2F%2Fwww.gstatic.com%2Fcharts%2Fannotatedtimeline%2F0%2Fde%2Fgetdata&amp;debug=false&amp;verticalScaling=maximized&amp;quote=L0&amp;displaySparkline=true&amp;inPageData=data" pluginspage="https://www.macromedia.com/go/getflashplayer" height="240" width="525"></div></td><td><div style="height: 237px; width: 175px;" class="annotationsdiv" id="annotationsDiv1"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><div><div aria-disabled="true" style="-moz-user-select: none;" role="button" title="" class="goog-inline-block goog-custom-button chartclient-button-up goog-custom-button-disabled"><div class="goog-inline-block goog-custom-button-outer-box"><div class="goog-inline-block goog-custom-button-inner-box"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><div class="icon-up"></div></td><td><div class="button-text"></div></td></tr></tbody></table></div></div></div></div></td><td class="chartclient-list-filter"></td></tr></tbody></table></td></tr><tr><td style="width: 100%; height: 201px;" id="scrollingListTd"><div style="overflow: hidden; position: relative; width: 100%; height: 201px;"><div style="position: relative; left: 0px; top: 0px;"><div class="chartclient-annotation"><table class="chartclient-annotation-table" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="chartclient-annotation-cell-1"><div class="chartclient-annotation-letter B">B.</div></td><td class="chartclient-annotation-cell-2"><div class="chartclient-annotation-title">Bought Pens</div><div class="chartclient-annotation-content">Bought 200k pens</div><div class="chartclient-annotation-date">2008-2-5</div></td></tr></tbody></table></div><div class="chartclient-annotation"><table class="chartclient-annotation-table" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="chartclient-annotation-cell-1"><div class="chartclient-annotation-letter A">A.</div></td><td class="chartclient-annotation-cell-2"><div class="chartclient-annotation-title">Out of Stock</div><div class="chartclient-annotation-content">Ran out of stock on pens at 4pm</div><div class="chartclient-annotation-date">2008-2-4</div></td></tr></tbody></table></div></div></div></td></tr><tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><div><div aria-disabled="true" style="-moz-user-select: none;" role="button" title="" class="goog-inline-block goog-custom-button chartclient-button-down goog-custom-button-disabled"><div class="goog-inline-block goog-custom-button-outer-box"><div class="goog-inline-block goog-custom-button-inner-box"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><div class="icon-down"></div></td><td><div class="button-text"></div></td></tr></tbody></table></div></div></div></div></td><td class="chartclient-placeholder-cell"><div></div></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></div>
+
+
+
+</body></html>
